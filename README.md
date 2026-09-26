@@ -34,25 +34,179 @@ The supplied Movies Recommendation.csv file contains 4,760 records and 21 origin
 
 <img width="524" height="147" alt="image" src="https://github.com/user-attachments/assets/47e8196c-e1c0-4fa0-9f24-d18f5abc54fe" />
 
+### Why is this a supervised learning project?
+
+Because the training dataset already contains the correct answer:
+
+Movie attributes → Actual Revenue
+
+The model learns from these known answers.
+
+                    SUPERVISED LEARNING
+
+         INPUT FEATURES              TARGET
+       ┌─────────────────┐        ┌───────────────┐
+       │ Budget          │        │               │
+       │ Popularity      │        │               │
+       │ Runtime         │───────►│    Revenue    │
+       │ Vote            │        │               │
+       │ Genre           │        │               │
+       │ Language        │        │               │
+       │ etc.            │        │               │
+       └─────────────────┘        └───────────────┘
+              X                         Y
 ### Project Structure
-""" MOVIE REVENUE PREDICTION
-│
+MOVIE REVENUE PREDICTION
+
+
 ├── 1. Problem Definition
+
 ├── 2. Dataset Understanding
+
 ├── 3. Data Cleaning
+
 ├── 4. Exploratory Data Analysis
+
 ├── 5. Data Preprocessing
+
 ├── 6. Feature Engineering
+
 ├── 7. Feature Selection
+
 ├── 8. Train-Test Split
+
 ├── 9. Linear Regression
+
 ├── 10. Ridge Regression
+
 ├── 11. Random Forest Regression
+
 ├── 12. Model Evaluation
+
 ├── 13. Model Comparison
+
 ├── 14. Prediction
+
 ├── 15. Conclusion
-└── 16. Deployment"""
-       
+
+└── 16. Deployment
+
+### PROJECT WORK FLOW:
+
+                INPUT
+                  ↓
+       ┌─────────────────────┐
+       │ Movie Budget        │
+       │ Movie Popularity    │
+       │ Movie Runtime       │
+       │ Movie Vote          │
+       │ Movie Vote Count    │
+       │ Release Year        │
+       │ Release Month       │
+       │ Movie Genre         │
+       │ Movie Language      │
+       │ Production Country  │
+       └─────────────────────┘
+                  ↓
+           PREPROCESSING
+                  ↓
+        RANDOM FOREST MODEL
+                  ↓
+                OUTPUT
+                  ↓
+        Predicted Movie Revenue
+
+### Project Workflow Summary
+
+The complete procedure can be summarized as:
+
+Step 1 – Define Problem
+
+Predict movie revenue using supervised machine learning.
+
+Step 2 – Load Dataset
+
+Load Movies Recommendation.csv.
+
+Step 3 – Understand Dataset
+
+Analyze rows, columns, data types and statistics.
+
+Step 4 – Clean Data
+
+Handle missing values and remove duplicate records.
+
+Step 5 – Perform EDA
+
+Analyze revenue, budget, popularity, ratings and other variables using statistical summaries and visualizations.
+
+Step 6 – Engineer Features
+
+Extract release year and release month from the release date.
+
+Step 7 – Select Features
+
+Remove identifiers and unsuitable variables.
+
+Step 8 – Transform Target
+
+Apply:
+
+np.log1p()
+
+to revenue.
+
+Step 9 – Encode Categories
+
+Apply One-Hot Encoding.
+
+Step 10 – Scale Numerical Features
+
+Apply StandardScaler.
+
+Step 11 – Split Dataset
+
+Use 80% training and 20% testing data.
+
+Step 12 – Train Models
+
+Train:
+
+Linear Regression
+Ridge Regression
+Random Forest Regression
+Step 13 – Evaluate Models
+
+Calculate:
+
+MAE
+RMSE
+R²
+Step 14 – Compare Models
+
+Compare the three models based on their test-set performance.
+
+Step 15 – Select Final Model
+
+Select the model based on the actual evaluation results.
+
+Step 16 – Save Model
+
+Save the complete preprocessing and prediction pipeline using Joblib.
+
+Step 17 – Develop API
+
+Create a Flask /predict endpoint.
+
+Step 18 – Containerize
+
+Create Docker configuration for deployment
+
+### Start Streamlit
+Open another terminal:
+
+streamlit run app.py
+The Streamlit application will open in your browser.
+
 
 
