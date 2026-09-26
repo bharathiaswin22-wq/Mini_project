@@ -31,8 +31,28 @@ Dataset Source: https://raw.githubusercontent.com/YBI-Foundation/Dataset/main/Mo
 
 ### Dataset Description
 The supplied Movies Recommendation.csv file contains 4,760 records and 21 original fields, exceeding the dataset-size requirements in the supplied guidelines.
+
 <img width="524" height="147" alt="image" src="https://github.com/user-attachments/assets/47e8196c-e1c0-4fa0-9f24-d18f5abc54fe" />
 
-
+### Project Structure
+""" MOVIE REVENUE PREDICTION
+│
+├── 1. Problem Definition
+├── 2. Dataset Understanding
+├── 3. Data Cleaning
+├── 4. Exploratory Data Analysis
+├── 5. Data Preprocessing
+├── 6. Feature Engineering
+├── 7. Feature Selection
+├── 8. Train-Test Split
+├── 9. Linear Regression
+├── 10. Ridge Regression
+├── 11. Random Forest Regression
+├── 12. Model Evaluation
+├── 13. Model Comparison
+├── 14. Prediction
+├── 15. Conclusion
+└── 16. Deployment"""
+       
 
 
