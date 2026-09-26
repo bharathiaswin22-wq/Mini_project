@@ -25,3 +25,14 @@ Given pre-release or release-associated movie attributes, estimate Movie_Revenue
 
 ### Success Criteria
 The solution should be reproducible, use leakage-safe preprocessing, report actual test-set metrics, compare multiple models, and produce a deployable serialized pipeline.
+
+### Dataset Information
+Dataset Source: https://raw.githubusercontent.com/YBI-Foundation/Dataset/main/Movies%20Recommendation.csv
+
+### Dataset Description
+The supplied Movies Recommendation.csv file contains 4,760 records and 21 original fields, exceeding the dataset-size requirements in the supplied guidelines. 
+<img width="540" height="143" alt="image" src="https://github.com/user-attachments/assets/082e408f-fbd8-42c1-920f-b32a1b23da13" />
+<img src="https://github.com/user-attachments/assets/082e408f-fbd8-42c1-920f-b32a1b23da13" alt="Dataset Details" width="400" height="200">
+
+
+
