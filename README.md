@@ -202,11 +202,42 @@ Step 18 – Containerize
 
 Create Docker configuration for deployment
 
+
+### Results and Discussion
+The executed experiment compares three regression approaches using the same feature set and preprocessing. The measured test-set results identify Random Forest Regression under the selected RMSE criterion. The result is data-derived rather than assumed.
+The experiment also demonstrates the value of a unified pipeline: categorical expansion can create a high-dimensional feature matrix, numerical scaling affects linear models, and non-linear ensembles provide a useful contrast to linear assumptions.
+
+### Business Interpretation
+The model is an analytical estimator, not a guaranteed financial forecast. Movie revenue can depend on marketing, distribution, franchise strength, competition, release strategy, audience trends and other factors not represented in the baseline dataset.
+
+### Limitations and Future Enhancements
+•	Validate the dataset's original source and definitions before production use.
+•	Add TF-IDF or embeddings for overview/keywords/tagline.
+•	Explore cast, crew and director features with careful leakage controls.
+•	Use time-aware validation for future-release prediction.
+•	Tune hyperparameters with cross-validation.
+•	Estimate prediction intervals or uncertainty.
+•	Add external business variables such as marketing or competition.
+•	Monitor model drift after deployment.
+
+### Conclusion
+This project implements an end-to-end supervised learning workflow for movie revenue prediction using the supplied dataset. It covers EDA, preprocessing, feature engineering, multiple-model training, evaluation and deployment planning. The executed experiment selects Random Forest Regression under the stated test-set RMSE criterion, and the complete fitted pipeline has been saved as a joblib artifact.
+The project satisfies the major technical workflow elements specified in the supplied mini-project guidelines while leaving richer text features, stronger validation and external variables as future enhancements.
+
+
 ### Start Streamlit
 Open another terminal:
 
 streamlit run app.py
 The Streamlit application will open in your browser.
 
+# Data Science Mini Project - Author
 
+**Student Name   : ASWINKUMAR R**
+
+**Batch          : DS AN B03**
+
+**Project Title  : Movie Revenue Prediction USing Machine Learning**
+
+**Submission Date: 26/09/26**
 
