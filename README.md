@@ -8,12 +8,19 @@ Given pre-release or release-associated movie attributes, estimate Movie_Revenue
 
 ### Project Objectives
 •	Understand data quality and distributions.
+
 •	Perform at least eight EDA visualizations.
+
 •	Handle missing values and duplicates and address skewness.
+
 •	Engineer release year and month.
+
 •	Compare multiple regression models.
+
 •	Evaluate using MAE, RMSE and R².
+
 •	Discuss generalization, overfitting and bias-variance.
+
 •	Prepare a deployment-ready model artifact and API design.
 
 ### Success Criteria
